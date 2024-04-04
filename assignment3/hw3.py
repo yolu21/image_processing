@@ -1,11 +1,11 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-# read the damaged image
 
-plt.figure(figsize=(15, 5))  # 設置 plt 視窗大小
+# read the damaged image
 file_name = str(input('input image filename:'))
 damaged_img = cv2.imread(file_name, 0)  # grayscale mode
+plt.figure(figsize=(15, 5))  # set the size of the figure
 plt.subplot(143), plt.imshow(damaged_img, cmap='gray'), plt.title('Damaged Image')
 
 # do the Fourier Transform
